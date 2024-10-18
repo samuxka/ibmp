@@ -1,0 +1,111 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: 2px solid var(--BlackColor);
+    background: var(--WhiteColor);
+}
+
+header .top{
+    width: 100%;
+    height: 30%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .top .logo img{
+    width: 100%;
+}
+
+header .middle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+header .middle nav{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+header .middle nav .navlist{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+}
+header .middle nav .navlist li a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--BlackColor);
+    transition: .3s;
+}
+
+header .middle nav .navlist li a:hover{
+    color: var(--MainColor);
+}
+
+header .bottom{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .bottom .social-medias{
+    width: auto;
+    height: 70px;
+    padding: 8px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 0px 0px 40px #0000004d;
+    background: var(--BlackColor);
+}
+
+header .bottom .social-medias .social{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+header .bottom .social-medias .social a i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--GrayBorderColor);
+    transition: .3s;
+}
+
+header .bottom .social-medias .social:hover{
+    background: var(--GrayBorderColor);
+}
+
+header .bottom .social-medias .social:hover a i{
+    color: var(--BlackColor);
+}
