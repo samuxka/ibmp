@@ -95,7 +95,7 @@ function Home() {
                         </SwiperComponent>
                     </div>
                     <About />
-                    <div className="facts" ref={factsRef} data-parallax="scroll" data-image-src="src/Assets/Images/slide1.jpg">
+                    <div className="facts" ref={factsRef} data-parallax="scroll" data-image-src="/Images/slide1.jpg">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-3 col-md-6">
