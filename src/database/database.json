@@ -4,21 +4,21 @@
             "id": 1,
             "title": "Ajude a africa",
             "content": "Uma igreja sem paredes",
-            "image": "src/Assets/Images/ajudeAfrica.jpeg",
+            "image": "/Images/ajudeAfrica.jpeg",
             "next": 2
         },
         {
             "id": 2,
             "title": "Igreja Batista Missionária Primitiva",
             "content": "Outra legenda",
-            "image": "src/Assets/Images/slide1.jpg",
+            "image": "/Images/slide1.jpg",
             "next": 3
         },
         {
             "id": 3,
             "title": "Missões em todo o mundo",
             "content": "Outra outra legenda",
-            "image": "src/Assets/Images/mission.jpg",
+            "image": "/Images/mission.jpg",
             "next": 1
         }
     ],
@@ -27,7 +27,7 @@
             "id": "Maputo",
             "title": "Ajude nossos irmãos em Maputo",
             "content": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
-            "image": "src/Assets/Images/causes-1.jpg",
+            "image": "/Images/causes-1.jpg",
             "progressNow": 0,
             "objetive": 10000,
             "objetiveNow": 7500
@@ -36,7 +36,7 @@
             "id": "Malawi",
             "title": "Ajude nossos irmãos em Malawi",
             "content": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
-            "image": "src/Assets/Images/causes-2.jpg",
+            "image": "/Images/causes-2.jpg",
             "progressNow": 0,
             "objetive": 17000,
             "objetiveNow": 5689
@@ -45,7 +45,7 @@
             "id": "Gana",
             "title": "Ajude nossos irmãos em Gana",
             "content": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
-            "image": "src/Assets/Images/causes-3.jpg",
+            "image": "/Images/causes-3.jpg",
             "progressNow": 0,
             "objetive": 4700,
             "objetiveNow": 1173
@@ -54,7 +54,7 @@
             "id": "Angola",
             "title": "Ajude nossos irmãos em Angola",
             "content": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
-            "image": "src/Assets/Images/causes-4.jpg",
+            "image": "/Images/causes-4.jpg",
             "progressNow": 0,
             "objetive": 8000,
             "objetiveNow": 5000
