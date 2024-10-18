@@ -1,5 +1,5 @@
 import './History.css'
-import work from '../../Assets/Images/work.png'
+import work from '/Images/work.png'
 
 function History(){
     return(
