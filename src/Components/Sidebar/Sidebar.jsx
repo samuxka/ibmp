@@ -1,6 +1,6 @@
 import './Sidebar.css'
 
-import Logo from 'Images/Logo.png'
+import Logo from '/Images/Logo.png'
 
 import { Link } from 'react-router-dom'
 
