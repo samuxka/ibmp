@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AboutImg from '../../../Assets/Images/about.jpg';
+import AboutImg from '/Images/about.jpg';
 
 function About() {
     const [activeTab, setActiveTab] = useState('about'); // Define o estado inicial como "about"
