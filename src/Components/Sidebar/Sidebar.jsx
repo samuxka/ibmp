@@ -20,7 +20,7 @@ function Sidebar(){
                     <ul className="navlist">
                       <li><a href="#about">Sobre <i className="fi fi-rr-arrow-right"></i></a></li>
                       <li><a href="#mission">Missões <i className="fi fi-rr-arrow-right"></i></a></li>
-                      <li><a href="#event">Eventos <i className="fi fi-rr-arrow-right"></i></a></li>
+                      <li><a href="#events">Eventos <i className="fi fi-rr-arrow-right"></i></a></li>
                       <li><a href="#contact">Contato <i className="fi fi-rr-arrow-right"></i></a></li>
                     </ul>
                   </nav>

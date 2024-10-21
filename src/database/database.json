@@ -59,5 +59,34 @@
             "objetive": 8000,
             "objetiveNow": 5000
         }
+    ],
+    "eventos": [
+        {
+            "id": "Evangelismo-Malawi",
+            "title": "Evangelismo em Malawi",
+            "content": "Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor",
+            "data": "10/07 - 11/07",
+            "horario": "7:00Am - 17:00PM",
+            "local": "Zomba - Malawi",
+            "image": "/Images/event-1.jpg"
+        },
+        {
+            "id": "Distribuicao-Alimento",
+            "title": "Distribuição de Alimentos em Angola",
+            "content": "Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor",
+            "data": "27/08 - 28/08",
+            "horario": "7:00Am - 17:00PM",
+            "local": "Puri - Angola",
+            "image": "/Images/event-2.jpg"
+        },
+        {
+            "id": "Multirao-da-Saude",
+            "title": "Multirão da Saude em Moçambique",
+            "content": "Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor",
+            "data": "04/09 - 05/09",
+            "horario": "7:00Am - 17:00PM",
+            "local": "Maputo - Moçambique",
+            "image": "/Images/event-1.jpg"
+        }
     ]
 }
