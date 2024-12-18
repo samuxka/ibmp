@@ -1,5 +1,5 @@
 import { MoveLeft } from 'lucide-react'
-import './missionPage.css'
+import './MissionPage.css'
 import { useRef, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom'
 import database from "../../../database/database.json";
