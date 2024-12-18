@@ -7,6 +7,7 @@ import History from './Pages/History/History'
 import Faq from './Pages/Faq/Faq'
 import Sidebar from './Components/Sidebar/Sidebar'
 import Footer from './Components/Footer/Footer'
+import MissionPage from './Pages/Home/Missions/MissionPage'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path='/' element={<Home/>}></Route>
               <Route path='/History' element={<History/>}></Route>
               <Route path='/Perguntas-frequentes' element={<Faq/>}></Route>
+              <Route path='/Mission/:id' element={<MissionPage/>}></Route>
             </Routes>
           <Footer />
         </div>

@@ -28,36 +28,88 @@
             "title": "Ajude nossos irmãos em Maputo",
             "content": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
             "image": "/Images/causes-1.jpg",
+            "contentPage": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa, Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa, Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
             "progressNow": 0,
             "objetive": 10000,
-            "objetiveNow": 7500
+            "objetiveNow": 7500,
+            "accountability": [
+                {
+                    "date": "2024/12/01",
+                    "description": "Compra de alimentos para as famílias necessitadas.",
+                    "amount": 2000
+                },
+                {
+                    "date": "2024/12/12",
+                    "description": "Reparos na estrutura da igreja local.",
+                    "amount": 1200
+                }
+            ]
         },
         {
             "id": "Malawi",
             "title": "Ajude nossos irmãos em Malawi",
             "content": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
             "image": "/Images/causes-2.jpg",
+            "contentPage": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa, Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa, Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
             "progressNow": 0,
             "objetive": 17000,
-            "objetiveNow": 5689
+            "objetiveNow": 5689,
+            "accountability": [
+                {
+                    "date": "10/04/2024",
+                    "description": "Compra de alimentos para as famílias necessitadas.",
+                    "amount": 2000
+                },
+                {
+                    "date": "16/08/2024",
+                    "description": "Reparos na estrutura da igreja local.",
+                    "amount": 1200
+                }
+            ]
         },
         {
             "id": "Gana",
             "title": "Ajude nossos irmãos em Gana",
             "content": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
             "image": "/Images/causes-3.jpg",
+            "contentPage": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa, Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa, Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
             "progressNow": 0,
             "objetive": 4700,
-            "objetiveNow": 1173
+            "objetiveNow": 1173,
+            "accountability": [
+                {
+                    "date": "20/10/2024",
+                    "description": "Compra de alimentos para as famílias necessitadas.",
+                    "amount": 2000
+                },
+                {
+                    "date": "15/06/2024",
+                    "description": "Reparos na estrutura da igreja local.",
+                    "amount": 1200
+                }
+            ]
         },
         {
             "id": "Angola",
             "title": "Ajude nossos irmãos em Angola",
             "content": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
             "image": "/Images/causes-4.jpg",
+            "contentPage": "Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa, Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa, Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa",
             "progressNow": 0,
             "objetive": 8000,
-            "objetiveNow": 5000
+            "objetiveNow": 5000,
+            "accountability": [
+                {
+                    "date": "16/09/2024",
+                    "description": "Compra de alimentos para as famílias necessitadas.",
+                    "amount": 2000
+                },
+                {
+                    "date": "25/08/2024",
+                    "description": "Reparos na estrutura da igreja local.",
+                    "amount": 1200
+                }
+            ]
         }
     ],
     "eventos": [

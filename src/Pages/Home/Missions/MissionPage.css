@@ -1,0 +1,199 @@
+.missionPage{
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.missionPage .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5%;
+}
+
+.missionPage .missionPage__header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 20px 0;
+}
+
+.missionPage .missionPage__header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--Black);
+    transition: .3s;
+}
+
+.missionPage .missionPage__header a:hover{
+    color: var(--MainColor);
+}
+
+.missionPage .missionPage__main{
+    display: flex;
+    gap: 30px;
+}
+
+.missionPage .missionPage__main .mission__main-content{
+    width: 70%;
+}
+
+.missionPage .missionPage__main .mission__main-content .main__content-image{
+    width: 100%;
+}
+
+.missionPage .missionPage__main .mission__main-content .main__content-image img{
+    width: 100%;
+}
+
+.missionPage .missionPage__main .mission__main-content .main__content-content{
+    width: 100%;
+}
+
+.missionPage .missionPage__main .mission__main-content .main__content-content h1{
+    margin: 20px 0;
+}
+
+.missionPage .missionPage__main .mission__main-content .main__content-content .contentPage{
+    margin: 0 0 20px 0;
+}
+
+.missionPage .missionPage__main .mission__main-content .main__content-content .content__content-accountability{
+    width: 100%;
+}
+
+.missionPage .missionPage__main .mission__main-content .main__content-content .content__content-accountability .accountability{
+    display: flex;
+    flex-direction: column;
+}
+
+.missionPage .missionPage__main .mission__main-content .main__content-content .content__content-accountability ul li{
+    width: 100%;
+    height: 70px;
+    padding: 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--GrayBorderColor);
+    margin: 20px 0;
+}
+
+.mission__main-recomendations{
+    width: 30%;
+}
+
+
+.mission__main-recomendations h1{
+    margin-bottom: 20px;
+}
+
+.causes-item {
+    max-width: 100%;
+    overflow: hidden;
+    background: var(--WhiteColor);
+    border: 1px solid var(--GrayBorderColor);
+    margin-bottom: 10px;
+}
+
+.causes-img {
+    overflow: hidden;
+}
+
+.causes-img img {
+    width: 100%;
+    transition: .3s;
+}
+
+.causes-item:hover img {
+    transform: scale(1.1);
+}
+
+.causes-progress {
+    width: 100%;
+    margin-top: 32px;
+    padding: 10px 10px 10px 10px;
+}
+
+.progress {
+    height: 10px;
+    background: #dddddd;
+    overflow: visible;
+}
+
+.progress-bar {
+    position: relative;
+    width: 0;
+    height: 10px;
+    background-color: var(--MainColor);
+    transition: width 2s ease-in-out;
+    margin-bottom: -10px;
+    overflow: visible;      
+}
+
+.progress-bar span {
+    position: absolute;
+    top: -32px;
+    right: 0;
+    height: 23px;
+    display: inline-block;
+    padding: 2px 6px;
+    background: var(--MainColor);
+    color: var(--WhiteColor);
+    font-size: 0.9rem;
+    z-index: 2;
+}
+
+.progress-bar span::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 23px;
+    left: calc(50% - 6px);
+    border: 6px solid;
+    border-color: var(--MainColor) transparent transparent transparent;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.progress-text p {
+    margin: 15px 0;
+}
+
+.causes-text {
+    padding: 30px 0 0 10px;
+}
+
+.causes-text h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.causes-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--MainColor);
+}
+
+.causes-btn .btn {
+    width: 50%;
+    cursor: pointer;
+}
+
+.causes-btn .btn:last-child {
+    color: var(--BlackColor);
+    background: var(--MainColor);
+}
+
+.causes-btn .btn:last-child:hover {
+    color: var(--WhiteColor);
+}

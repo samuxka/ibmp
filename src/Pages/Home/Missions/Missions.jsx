@@ -4,6 +4,7 @@ import 'swiper/css/pagination';
 import { Swiper as SwiperComponent, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const missions = database.acoes;
 
@@ -27,7 +28,7 @@ function Missions() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const AcoesCard = ({ title, content, image, objetive, objetiveNow }) => {
+    const AcoesCard = ({ id, title, content, image, objetive, objetiveNow }) => {
         const progressPercentage = (objetiveNow / objetive) * 100 || 0;
 
         return (
@@ -59,7 +60,7 @@ function Missions() {
                     <p>{content}</p>
                 </div>
                 <div className="causes-btn">
-                    <a className="btn btn-custom">Ler mais</a>
+                    <Link to={`/Mission/${id}`} className="btn btn-custom">Ler mais</Link>
                     <a className="btn btn-custom">Doar Agora</a>
                 </div>
             </div>
@@ -87,6 +88,7 @@ function Missions() {
                         return (
                             <SwiperSlide key={acao.id}>
                                 <AcoesCard
+                                    id={acao.id}
                                     title={acao.title}
                                     content={acao.content}
                                     image={acao.image}

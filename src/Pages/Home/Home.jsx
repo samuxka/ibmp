@@ -13,14 +13,14 @@ import { useEffect, useRef } from 'react';
 const slides = database.slides;
 
 function Home() {
-    const factsRef = useRef(null); // Usamos ref para a seção facts
-    const observerRef = useRef(null); // Para garantir que o observer seja removido após a primeira ativação
+    const factsRef = useRef(null);
+    const observerRef = useRef(null);
 
     useEffect(() => {
         const counters = document.querySelectorAll('.counter');
 
         const runCounters = () => {
-            const speed = 200; // Velocidade da contagem
+            const speed = 200;
 
             counters.forEach(counter => {
                 const updateCount = () => {
@@ -44,25 +44,25 @@ function Home() {
         const observerCallback = (entries) => {
             const [entry] = entries;
             if (entry.isIntersecting) {
-                runCounters(); // Executa o contador quando a área entra na viewport
+                runCounters();
                 if (observerRef.current) {
-                    observerRef.current.disconnect(); // Desconecta o observer após a primeira execução
+                    observerRef.current.disconnect();
                 }
             }
         };
 
         observerRef.current = new IntersectionObserver(observerCallback, {
-            root: null, // Usa a viewport como root
-            threshold: 0.5, // Ativa quando 50% da área estiver visível
+            root: null,
+            threshold: 0.5,
         });
 
         if (factsRef.current) {
-            observerRef.current.observe(factsRef.current); // Observa a seção `facts`
+            observerRef.current.observe(factsRef.current);
         }
 
         return () => {
             if (observerRef.current) {
-                observerRef.current.disconnect(); // Limpa o observer quando o componente for desmontado
+                observerRef.current.disconnect();
             }
         };
     }, []);
