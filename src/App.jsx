@@ -14,14 +14,14 @@ function App() {
     <>
       <Router>
         <div>
-          <Sidebar />
+          <Sidebar/>
             <Routes>
               <Route path='/' element={<Home/>}></Route>
               <Route path='/History' element={<History/>}></Route>
               <Route path='/Perguntas-frequentes' element={<Faq/>}></Route>
               <Route path='/Mission/:id' element={<MissionPage/>}></Route>
             </Routes>
-          <Footer />
+            <Footer/>
         </div>
       </Router>
     </>

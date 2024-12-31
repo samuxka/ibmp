@@ -1,0 +1,181 @@
+@media (max-width:2560px) {
+    header .middle nav .navlist li a {
+        font-size: 2.5rem;
+    }
+
+    .about .about-tab .tab-content {
+        padding: 15px 0 0 0;
+        width: 100%;
+        height: 300px;
+    }
+
+    .about .about-tab .tab-content p {
+        font-size: 1.5rem;
+    }
+
+    .event .event-item {
+        width: 100%;
+        height: 750px;
+    }
+}
+
+@media (max-width:1920px) {
+    .about .about-tab .tab-content p {
+        font-size: 1.2rem;
+    }
+
+    .event .event-item {
+        width: 550px;
+        height: 600px;
+    }
+
+    .event .event-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .event .event-text p {
+        margin: 10px 0 15px 0;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:1440px) {
+    .about .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .about .about-tab .tab-content p {
+        font-size: 1rem;
+    }
+
+    .service .service-item {
+        height: 120px;
+    }
+
+    .service .service-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .service .service-text p {
+        font-size: 0.7rem;
+    }
+
+    .facts .facts-item i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    .facts .facts-text h3 {
+        font-size: 2rem;
+    }
+
+    .causes .causes-progress {
+        margin-top: 22px;
+        padding: 20px 20px 10px 20px;
+    }
+
+    .causes .progress {
+        height: 7px;
+    }
+
+    .causes .progress-bar {
+        height: 7px;
+    }
+
+    .causes .progress-bar span {
+        position: absolute;
+        top: -32px;
+        right: 0;
+        height: 23px;
+        display: inline-block;
+        padding: 2px 6px;
+        background: var(--MainColor);
+        color: var(--WhiteColor);
+        font-size: 0.9rem;
+        z-index: 2;
+    }
+
+    .event .event-item {
+        width: 100%;
+        height: 500px;
+    }
+
+    .event .event-meta p {
+        font-size: .7rem;
+    }
+
+    .event .event-text h3 {
+        font-size: 1rem;
+    }
+
+    .event .event-text p {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .empty{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .service .row{
+        grid-template-columns: 1fr 1fr;
+    }
+    .service .service-text p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .facts .facts-item i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    .facts .facts-text h3 {
+        font-size: 1.5rem;
+    }
+    .facts .facts-text p {
+        color: var(--WhiteColor);
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .about__left{
+        background: red;
+        height: 450px;
+    }
+}
+
+@media (max-width: 425px) {
+    .about__content-top{
+        flex-direction: column;
+    }
+
+    .about .about__content .about__content-top .about__left,
+    .about .about__content .about__content-top .about__right{
+        text-align: center;
+        width: 100%;
+    }
+    .about .section-header{
+        text-align: center;
+    }
+    .service .row{
+        grid-template-columns: 1fr;
+    }
+    .facts .container .row{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about .about-tab .nav.nav-pills{
+        width: 100%;
+    }
+}

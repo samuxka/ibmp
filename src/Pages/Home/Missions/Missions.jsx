@@ -1,10 +1,12 @@
 import database from '../../../database/database.json';
 import 'swiper/css';
 import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
 import { Swiper as SwiperComponent, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
 
 const missions = database.acoes;
 
@@ -67,6 +69,11 @@ function Missions() {
         );
     };
 
+    useEffect(() => {
+        console.log('Breakpoints configurados:', SwiperComponent?.params?.breakpoints);
+    }, []);
+
+
     return (
         <div className="causes" id="mission" ref={missionRef}>
             <div className="container">
@@ -79,10 +86,30 @@ function Missions() {
                     navigation
                     loop={true}
                     grabCursor={true}
-                    slidesPerView={3}
                     className="causes-container"
                     modules={[Pagination, Navigation]}
-                    spaceBetween={30}
+                    breakpoints={{
+                        2560: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                        1440: {
+                            slidesPerView: 2.2,
+                            spaceBetween: 30,
+                        },
+                        1024: {
+                            slidesPerView: 2.2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 1.5,
+                            spaceBetween: 15,
+                        },
+                        480: {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        },
+                    }}
                 >
                     {missions.map((acao) => {
                         return (

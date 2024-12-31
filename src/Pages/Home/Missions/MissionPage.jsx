@@ -30,9 +30,9 @@ function MissionPage() {
                 });
             }
         };
-        
+
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); 
+        handleScroll();
 
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
@@ -98,11 +98,13 @@ function MissionPage() {
                                         {mission.accountability && mission.accountability.length > 0 ? (
                                             <ul>
                                                 {mission.accountability.map((entry, index) => (
-                                                    <li key={index}>
-                                                        <p><strong>Data:</strong> {entry.date}</p>
-                                                        <p><strong>Descrição:</strong> {entry.description}</p>
-                                                        <p><strong>Valor:</strong> {entry.amount} EUR</p>
-                                                    </li>
+                                                    <a href="#">
+                                                        <li key={index}>
+                                                            <p><strong>Data:</strong> {entry.date}</p>
+                                                            <p><strong>Descrição:</strong> {entry.description}</p>
+                                                            <p><strong>Valor:</strong> {entry.amount} EUR</p>
+                                                        </li>
+                                                    </a>
                                                 ))}
                                             </ul>
                                         ) : (
@@ -114,18 +116,20 @@ function MissionPage() {
                         </div>
                         <div className="mission__main-recomendations">
                             <h1>Veja também</h1>
-                            {recommendedMissions.map((acao) => (
-                                <div key={acao.id} className="recommendation-card">
-                                    <AcoesCard
-                                        id={acao.id}
-                                        title={acao.title}
-                                        content={acao.content}
-                                        image={acao.image}
-                                        objetive={acao.objetive}
-                                        objetiveNow={acao.objetiveNow}
-                                    />
-                                </div>
-                            ))}
+                            <div className="recomendations">
+                                {recommendedMissions.map((acao) => (
+                                    <div key={acao.id} className="recommendation-card">
+                                        <AcoesCard
+                                            id={acao.id}
+                                            title={acao.title}
+                                            content={acao.content}
+                                            image={acao.image}
+                                            objetive={acao.objetive}
+                                            objetiveNow={acao.objetiveNow}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

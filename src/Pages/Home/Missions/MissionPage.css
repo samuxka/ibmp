@@ -70,6 +70,10 @@
     flex-direction: column;
 }
 
+.missionPage .missionPage__main .mission__main-content .main__content-content .content__content-accountability ul a{
+    color: var(--Black);
+}
+
 .missionPage .missionPage__main .mission__main-content .main__content-content .content__content-accountability ul li{
     width: 100%;
     height: 70px;
@@ -80,6 +84,7 @@
     background: var(--GrayBorderColor);
     margin: 20px 0;
 }
+
 
 .mission__main-recomendations{
     width: 30%;
@@ -181,7 +186,6 @@
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid var(--MainColor);
 }
 
 .causes-btn .btn {
@@ -196,4 +200,47 @@
 
 .causes-btn .btn:last-child:hover {
     color: var(--WhiteColor);
+}
+
+@media (max-width: 1024px){
+    .missionPage .missionPage__main{
+        display: flex;
+        flex-direction: column;
+    }
+    .missionPage .missionPage__main .mission__main-content{
+        width: 100%;
+    }
+    .mission__main-recomendations{
+        width: 100%;
+    }
+
+    .mission__main-recomendations .recomendations{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .causes-text h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .causes-text p{
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px){
+    .missionPage .missionPage__main .mission__main-content .main__content-content .content__content-accountability ul li p{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5rem;
+    }
+    .mission__main-recomendations .recomendations{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }

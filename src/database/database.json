@@ -34,12 +34,12 @@
             "objetiveNow": 7500,
             "accountability": [
                 {
-                    "date": "2024/12/01",
+                    "date": "02/06/2024",
                     "description": "Compra de alimentos para as famílias necessitadas.",
                     "amount": 2000
                 },
                 {
-                    "date": "2024/12/12",
+                    "date": "07/08/2024",
                     "description": "Reparos na estrutura da igreja local.",
                     "amount": 1200
                 }
@@ -133,6 +133,15 @@
         },
         {
             "id": "Multirao-da-Saude",
+            "title": "Multirão da Saude em Moçambique",
+            "content": "Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor",
+            "data": "04/09 - 05/09",
+            "horario": "7:00Am - 17:00PM",
+            "local": "Maputo - Moçambique",
+            "image": "/Images/event-1.jpg"
+        },
+        {
+            "id": "Mestandoo",
             "title": "Multirão da Saude em Moçambique",
             "content": "Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor",
             "data": "04/09 - 05/09",

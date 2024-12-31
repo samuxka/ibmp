@@ -1,4 +1,4 @@
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +12,7 @@ header{
     background: var(--WhiteColor);
 }
 
-header .top{
+header .top {
     width: 100%;
     height: 30%;
     padding: 5%;
@@ -21,11 +21,11 @@ header .top{
     justify-content: center;
 }
 
-header .top .logo img{
+header .top .logo img {
     width: 100%;
 }
 
-header .middle{
+header .middle {
     width: 100%;
     height: 100%;
     display: flex;
@@ -33,20 +33,22 @@ header .middle{
     padding: 0 5%;
 }
 
-header .middle nav{
+header .middle nav {
     width: 100%;
     height: 50%;
     display: flex;
     align-items: center;
 }
-header .middle nav .navlist{
+
+header .middle nav .navlist {
     width: 100%;
     display: flex;
     justify-content: start;
     flex-direction: column;
     gap: 20px;
 }
-header .middle nav .navlist li a{
+
+header .middle nav .navlist li a {
     width: 100%;
     display: flex;
     align-items: center;
@@ -57,11 +59,11 @@ header .middle nav .navlist li a{
     transition: .3s;
 }
 
-header .middle nav .navlist li a:hover{
+header .middle nav .navlist li a:hover {
     color: var(--MainColor);
 }
 
-header .bottom{
+header .bottom {
     width: 100%;
     height: 20%;
     display: flex;
@@ -69,7 +71,7 @@ header .bottom{
     justify-content: center;
 }
 
-header .bottom .social-medias{
+header .bottom .social-medias {
     width: auto;
     height: 70px;
     padding: 8px;
@@ -82,7 +84,7 @@ header .bottom .social-medias{
     background: var(--BlackColor);
 }
 
-header .bottom .social-medias .social{
+header .bottom .social-medias .social {
     width: 50px;
     height: 50px;
     display: flex;
@@ -93,7 +95,7 @@ header .bottom .social-medias .social{
     transition: .3s;
 }
 
-header .bottom .social-medias .social a i{
+header .bottom .social-medias .social a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,10 +104,62 @@ header .bottom .social-medias .social a i{
     transition: .3s;
 }
 
-header .bottom .social-medias .social:hover{
+header .bottom .social-medias .social:hover {
     background: var(--GrayBorderColor);
 }
 
-header .bottom .social-medias .social:hover a i{
+header .bottom .social-medias .social:hover a {
     color: var(--BlackColor);
+}
+
+#menu-icon {
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+@media (max-width:1024px) {
+    header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        border: transparent;
+        padding: 2.5%;
+        z-index: 2;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    header .middle nav .navlist {
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--WhiteColor);
+        transition: all .5s ease;
+    }
+    header .middle nav .navlist.open {
+        top: 100%;
+        padding: 5%; 
+    }
+    header .bottom{
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    header .top{
+        width: 250%;
+        height: 100%;
+    }
+    header .top .logo img {
+        width: 100%;
+    }
 }

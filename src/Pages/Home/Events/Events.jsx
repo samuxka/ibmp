@@ -23,7 +23,28 @@ function Events() {
                             navigation
                             loop={true}
                             grabCursor={true}
-                            slidesPerView={2}
+                            breakpoints={{
+                                2560: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 30,
+                                },
+                                1440: {
+                                    slidesPerView: 2.2,
+                                    spaceBetween: 30,
+                                },
+                                1024: {
+                                    slidesPerView: 2.2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 1.5,
+                                    spaceBetween: 15,
+                                },
+                                480: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                },
+                            }}
                             className="events-container"
                             modules={[Pagination, Navigation]}
                             >

@@ -1,4 +1,5 @@
 import './Footer.css'
+import { Copyright } from 'lucide-react'
 
 import { Link } from 'react-router-dom'
 
@@ -30,18 +31,6 @@ function Footer(){
                                 </div>
                             </div>
                         </div>
-                        <div className="pages">
-                            <div className="head">
-                                <h2>Páginas</h2>
-                            </div>
-                                <div className="info__pages c">
-                                    <Link to='/History' className='link'><i className="fi fi-rr-arrow-turn-down-right"></i> Historia</Link>
-                                    <Link to='/History' className='link'><i className="fi fi-rr-arrow-turn-down-right"></i> Missões</Link>
-                                    <Link to='/History' className='link'><i className="fi fi-rr-arrow-turn-down-right"></i> Doação</Link>
-                                    <Link to='/History' className='link'><i className="fi fi-rr-arrow-turn-down-right"></i> Página1</Link>
-                                    <Link to='/History' className='link'><i className="fi fi-rr-arrow-turn-down-right"></i> Página2</Link>
-                                </div>
-                        </div>
                         <div className="support">
                             <div className="head">
                                 <h2>Suporte</h2>
@@ -56,8 +45,8 @@ function Footer(){
                     <div className="footer__bottom">
                     <div className='hr'></div>
                         <div className="copyright">
-                            <p><i className="fi fi-rr-circle-c"></i>Igreja Batista Missionaria Primitiva<span>, Todos os direitos reservados.</span></p>
-                            <p><span>Feito por</span> <a href="https://www.instagram.com/sso_webflow" className='link'>SSO  - Webflow</a></p>
+                            <p className='copyright-text'><Copyright/> Igreja Batista Missionaria Primitiva<span>, Todos os direitos reservados.</span></p>
+                            <p><span>Feito por</span> <a href="https://www.instagram.com/sso_webflow" className='link'>SMXK</a></p>
                         </div>
                     </div>
                 </div>

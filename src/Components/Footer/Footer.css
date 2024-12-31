@@ -40,7 +40,7 @@ footer .footer__top .c a{
 
 footer .content .footer__top{
     width: 100%;
-    height: 70%;
+    height: auto;
     padding: 5%;
     gap: 50px;
     display: flex;
@@ -115,7 +115,7 @@ footer .content .footer__bottom .copyright p{
     gap: 5px;
     color: var(--WhiteColor);
 }
-footer .content .footer__bottom .copyright p i{
+footer .content .footer__bottom .copyright p svg{
     display: flex;
     align-items: center;
 }
@@ -138,4 +138,49 @@ footer .hr{
     width: 100%;
     height: 1px;
     background: #797979;
+}
+
+@media (max-width: 1024px){
+    footer{
+        width: 100%;
+    }
+    footer .empty{
+        display: none;
+    }
+    footer .content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    footer{
+        height: auto;
+    }
+    footer .content .footer__top{
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer .content .footer__top .info__support{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    footer .content .footer__bottom .copyright{
+        flex-direction: column;
+    }
+    footer .content .footer__bottom .copyright p{
+        font-size: 0.6943rem;
+    }
+    footer .content .footer__bottom .copyright p a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px){
+    footer .content .footer__bottom .copyright p svg{
+        width: 15px;
+    }
+    footer .content .footer__bottom .copyright p{
+        font-size: 0.6049rem;
+    }
 }

@@ -29,7 +29,7 @@ function Home() {
 
                     const increment = target / speed;
 
-                    if(count < target) {
+                    if (count < target) {
                         counter.innerText = Math.ceil(count + increment);
                         setTimeout(updateCount, 10);
                     } else {
@@ -73,7 +73,7 @@ function Home() {
                 <div className="empty"></div>
                 <div className="content">
                     <div className="home__carrossel">
-                        <SwiperComponent 
+                        <SwiperComponent
                             pagination={{ clickable: true }}
                             navigation
                             loop={true}
@@ -95,7 +95,7 @@ function Home() {
                         </SwiperComponent>
                     </div>
                     <About />
-                    <div className="facts" ref={factsRef} data-parallax="scroll" data-image-src="/Images/slide1.jpg">
+                    <div className="facts" ref={factsRef} data-parallax="scroll" data-image-src="/Images/slide1.webp">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-3 col-md-6">

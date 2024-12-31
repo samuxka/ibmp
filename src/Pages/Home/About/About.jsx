@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import AboutImg from '/Images/about.jpg';
+// import AboutImg from '/Images/about.jpg';
+import '../../../mediaqueries.css'
+import '../Home.css'
 
 function About() {
-    const [activeTab, setActiveTab] = useState('about'); // Define o estado inicial como "about"
+    const [activeTab, setActiveTab] = useState('about');
 
     const handleTabClick = (tab) => {
-        setActiveTab(tab); // Atualiza o estado com a aba clicada
+        setActiveTab(tab);
     };
 
     return (
@@ -13,9 +15,6 @@ function About() {
             <div className="about__content">
                 <div className="about__content-top">
                     <div className="about__left">
-                        <div className="col-lg-6">
-                            <img src={AboutImg} className='about-img' />
-                        </div>
                     </div>
                     <div className="about__right">
                         <div className="col-lg-6">
@@ -45,17 +44,18 @@ function About() {
                                 <div className="tab-content">
                                     {activeTab === 'about' && (
                                         <div id="tab-content-1">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae pellentesque turpis. Donec in hendrerit dui, vel blandit massa. Ut vestibulum suscipit cursus. Cras quis porta nulla, ut placerat risus. Aliquam nec magna eget velit luctus dictum. Phasellus et felis sed purus tristique dignissim. Morbi sit amet leo at purus accumsan pellentesque. Vivamus fermentum nisi vel dapibus blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae pellentesque turpis. Donec in hendrerit dui, vel blandit massa. Ut vestibulum suscipit cursus. Cras quis porta nulla, ut placerat risus. Aliquam nec magna eget velit luctus dictum. Phasellus et felis sed purus tristique dignissim. Morbi sit amet leo at purus accumsan pellentesque. Vivamus fermentum nisi vel dapibus blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                         </div>
                                     )}
                                     {activeTab === 'mission' && (
                                         <div id="tab-content-2">
-                                            Sed tincidunt, magna ut vehicula volutpat, turpis diam condimentum justo, posuere congue turpis massa in mi. Proin ornare at massa at fermentum. Nunc aliquet sed nisi iaculis ornare. Nam semper tortor eget est egestas, eu sagittis nunc sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent bibendum sapien sed purus molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <p>Sed tincidunt, magna ut vehicula volutpat, turpis diam condimentum justo, posuere congue turpis massa in mi. Proin ornare at massa at fermentum. Nunc aliquet sed nisi iaculis ornare. Nam semper tortor eget est egestas, eu sagittis nunc sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent bibendum sapien sed purus molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
                                         </div>
                                     )}
                                     {activeTab === 'vision' && (
                                         <div id="tab-content-3">
-                                            Aliquam dolor odio, mollis sed feugiat sit amet, feugiat ut sapien. Nunc eu dignissim lorem. Suspendisse at hendrerit enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed condimentum semper turpis vel facilisis. Nunc vel faucibus orci. Mauris ut mauris rhoncus, efficitur nisi at, venenatis quam. Praesent egestas pretium enim sit amet finibus. Curabitur at erat molestie, tincidunt lorem eget, consequat ligula.
+                                            <p>Aliquam dolor odio, mollis sed feugiat sit amet, feugiat ut sapien. Nunc eu dignissim lorem. Suspendisse at hendrerit enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed condimentum semper turpis vel facilisis. Nunc vel faucibus orci. Mauris ut mauris rhoncus, efficitur nisi at, venenatis quam. Praesent egestas pretium enim sit amet finibus. Curabitur at erat molestie, tincidunt lorem eget, consequat ligula.</p>
                                         </div>
                                     )}
                                 </div>
