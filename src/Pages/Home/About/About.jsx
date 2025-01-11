@@ -26,17 +26,17 @@ function About() {
                                 <ul className="nav nav-pills">
                                     <li className="nav-item">
                                         <button className={`nav-link ${activeTab === 'about' ? 'active' : ''}`} onClick={() => handleTabClick('about')}>
-                                            About
+                                            Sobre
                                         </button>
                                     </li>
                                     <li className="nav-item">
                                         <button className={`nav-link ${activeTab === 'mission' ? 'active' : ''}`} onClick={() => handleTabClick('mission')}>
-                                            Mission
+                                            Missão
                                         </button>
                                     </li>
                                     <li className="nav-item">
                                         <button className={`nav-link ${activeTab === 'vision' ? 'active' : ''}`} onClick={() => handleTabClick('vision')}>
-                                            Vision
+                                            Visão
                                         </button>
                                     </li>
                                 </ul>
@@ -44,18 +44,21 @@ function About() {
                                 <div className="tab-content">
                                     {activeTab === 'about' && (
                                         <div id="tab-content-1">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae pellentesque turpis. Donec in hendrerit dui, vel blandit massa. Ut vestibulum suscipit cursus. Cras quis porta nulla, ut placerat risus. Aliquam nec magna eget velit luctus dictum. Phasellus et felis sed purus tristique dignissim. Morbi sit amet leo at purus accumsan pellentesque. Vivamus fermentum nisi vel dapibus blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            <p>Somos uma equipe missionária com coração ardente por missões. Fomos inundados com o texto de Atos 6, onde os discípulos se propuseram a escolher sete para atender a mesa do Senhor. Hoje representamos esses sete em todas as esferas da sociedade, servimos a mesa do Senhor, quando preciso ficamos calados ao lado de quem sente a dor ou ouvir seus lamentos e alimentar suas esperanças e seu espírito com a palavra de Deus bem como sua carne com o pão, trazer alegria aos que precisam de uma visita, sermos o socorro do necessitado, somos aqueles que SERVEM A MESA DO SENHOR.
+                                            </p>
                                         </div>
                                     )}
                                     {activeTab === 'mission' && (
                                         <div id="tab-content-2">
-                                            <p>Sed tincidunt, magna ut vehicula volutpat, turpis diam condimentum justo, posuere congue turpis massa in mi. Proin ornare at massa at fermentum. Nunc aliquet sed nisi iaculis ornare. Nam semper tortor eget est egestas, eu sagittis nunc sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent bibendum sapien sed purus molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <p>Ide por todo mundo e pregai o evangelho a toda criatura... A religião pura e imaculada para com Deus e Pai, é esta: Visitar os órfãos e as viúvas nas suas tribulações... (Marcos 16:15 e Tiago 1:27). Eis aí a base de nossa missão, pois cremos que este sim é o verdadeiro evangelho e esta é a missão que nos foi designada para fazermos. Mesmo de longe é possível sim executar o ide do Senhor. Temos colaboradores que tem nos ajudado financeiramente o que torna isso possível.
+
                                             </p>
                                         </div>
                                     )}
                                     {activeTab === 'vision' && (
                                         <div id="tab-content-3">
-                                            <p>Aliquam dolor odio, mollis sed feugiat sit amet, feugiat ut sapien. Nunc eu dignissim lorem. Suspendisse at hendrerit enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed condimentum semper turpis vel facilisis. Nunc vel faucibus orci. Mauris ut mauris rhoncus, efficitur nisi at, venenatis quam. Praesent egestas pretium enim sit amet finibus. Curabitur at erat molestie, tincidunt lorem eget, consequat ligula.</p>
+                                            <p>E, perseverando unânimes todos os dias no templo, e partindo o pão em casa, comiam juntos com alegria e singeleza de coração, louvando a Deus, e caindo na graça de todo o povo. E todos os dias acrescentava o Senhor à igreja aqueles que se haviam de salvar (Atos 2:46 e 47). Crendo que este é o verdadeiro evangelho, seguimos em oração e com o coração ardente pra que cada objetivo, cada meta seja alcançada para que possamos proporcionar cada vez mais sorrisos no rosto, alegria no coração e salvação nas almas oprimidas. 
+                                            </p>
                                         </div>
                                     )}
                                 </div>
@@ -78,7 +81,7 @@ function About() {
                                         </div>
                                         <div className="service-text">
                                             <h3>Ajuda Alimentar</h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                            <p>Criamos uma cadeia sustentável unindo produção agrícola e alimentar.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -89,7 +92,7 @@ function About() {
                                         </div>
                                         <div className="service-text">
                                             <h3>Água</h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                            <p>Garantimos água com poços para sustentar projetos e moradores.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -100,7 +103,7 @@ function About() {
                                         </div>
                                         <div className="service-text">
                                             <h3>Assistência Medica</h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                            <p>Parcerias criam centros de saúde em áreas remotas e afetadas.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +114,7 @@ function About() {
                                         </div>
                                         <div className="service-text">
                                             <h3>Educação Primária</h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                            <p>Criamos um infantário para apoiar crianças sem acesso à educação.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -122,7 +125,7 @@ function About() {
                                         </div>
                                         <div className="service-text">
                                             <h3>Moradias</h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                            <p>Produzimos blocos para apoiar construções e moradias em risco.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -133,7 +136,7 @@ function About() {
                                         </div>
                                         <div className="service-text">
                                             <h3>Assistência Social</h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                            <p>"O atendimento social atua onde houver necessidade e urgência.</p>
                                         </div>
                                     </div>
                                 </div>
